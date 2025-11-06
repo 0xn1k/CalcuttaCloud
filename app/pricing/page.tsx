@@ -212,7 +212,7 @@ export default function PricingPage() {
             viewport={{ once: true }}
             className="mt-24"
           >
-            <h2 className="mb-4 text-center text-2xl font-bold">À La Carte Services</h2>
+            <h2 className="mb-4 text-center text-2xl font-bold">Our Services</h2>
             <p className="mb-12 text-center text-muted-foreground">
               Pick individual services based on your specific needs
             </p>

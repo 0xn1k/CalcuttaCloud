@@ -17,11 +17,12 @@ import {
 
 const services = [
   {
-    icon: Lightbulb,
-    title: "Strategy & Planning",
-    description: "Turn ideas into executable, data-driven strategies for sustainable growth.",
-    gradient: "from-blue-500 to-cyan-500",
+    icon: Code,
+    title: "Web & App Development",
+    description: "Code reliability from front-end to cloud infrastructure.",
+    gradient: "from-orange-500 to-red-500",
   },
+  
   {
     icon: Palette,
     title: "Creative & Design Studio",
@@ -29,11 +30,12 @@ const services = [
     gradient: "from-purple-500 to-pink-500",
   },
   {
-    icon: Code,
-    title: "Web & App Development",
-    description: "Code reliability from front-end to cloud infrastructure.",
-    gradient: "from-orange-500 to-red-500",
-  },
+    icon: Lightbulb,
+    title: "Strategy & Planning",
+    description: "Turn ideas into executable, data-driven strategies for sustainable growth.",
+    gradient: "from-blue-500 to-cyan-500",
+  }
+  ,
   {
     icon: TrendingUp,
     title: "Marketing & Growth",
