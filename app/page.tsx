@@ -14,6 +14,8 @@ import {
   Heart,
   Share2
 } from "lucide-react";
+import { useEffect } from "react";
+import Cal, { getCalApi } from "@calcom/embed-react";
 
 const services = [
   {
@@ -101,6 +103,17 @@ const whyChooseUs = [
 ];
 
 export default function HomePage() {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({"namespace":"connect"});
+      cal("ui", {
+        "styles": { "branding": { "brandColor": "#9333ea" } },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
+      });
+    })();
+  }, []);
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -155,15 +168,17 @@ export default function HomePage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-10 flex flex-wrap items-center justify-center gap-4"
             >
-              <Link
-                href="/pricing"
+              <button
+                data-cal-namespace="connect"
+                data-cal-link="nishant-k/connect-for-calcuttacloud"
+                data-cal-config='{"layout":"month_view"}'
                 className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 px-8 py-3 font-medium text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl"
               >
                 <span className="relative flex items-center gap-2">
                   Get Started
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
-              </Link>
+              </button>
 
               <Link
                 href="/showcase"
@@ -336,15 +351,17 @@ export default function HomePage() {
               Join hundreds of creators and businesses who trust Calcutta Cloud to create, deploy, market, and scale — all in one place.
             </p>
             <div className="mt-10">
-              <Link
-                href="/pricing"
+              <button
+                data-cal-namespace="connect"
+                data-cal-link="nishant-k/connect-for-calcuttacloud"
+                data-cal-config='{"layout":"month_view"}'
                 className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-3 font-medium text-blue-600 shadow-lg transition-all hover:scale-105 hover:shadow-xl"
               >
                 <span className="flex items-center gap-2">
-                  View Our Services
+                  Schedule a Meeting
                   <ArrowRight className="h-4 w-4" />
                 </span>
-              </Link>
+              </button>
             </div>
           </motion.div>
         </div>

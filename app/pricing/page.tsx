@@ -7,7 +7,7 @@ import Link from "next/link";
 const plans = [
   {
     name: "Starter",
-    price: "$499",
+    price: "₹499",
     period: "/project",
     description: "Perfect for small projects and startups",
     icon: Zap,
@@ -24,7 +24,7 @@ const plans = [
   },
   {
     name: "Professional",
-    price: "$1,999",
+    price: "₹1,999",
     period: "/month",
     description: "Ideal for growing businesses",
     icon: Sparkles,
@@ -68,46 +68,46 @@ const services = [
   {
     category: "Strategy & Planning",
     items: [
-      { name: "Business Strategy", price: "$1,500" },
-      { name: "Brand Strategy", price: "$1,200" },
-      { name: "Marketing Strategy", price: "$1,000" },
-      { name: "Market Research", price: "$800" },
+      { name: "Business Strategy", price: "₹1,500" },
+      { name: "Brand Strategy", price: "₹1,200" },
+      { name: "Marketing Strategy", price: "₹1,000" },
+      { name: "Market Research", price: "₹800" },
     ],
   },
   {
     category: "Creative & Design",
     items: [
-      { name: "Logo & Brand Identity", price: "$500" },
-      { name: "UI/UX Design", price: "$150/screen" },
-      { name: "Motion Graphics Video", price: "$300/min" },
-      { name: "Graphic Design Package", price: "$400" },
+      { name: "Logo & Brand Identity", price: "₹500" },
+      { name: "UI/UX Design", price: "₹150/screen" },
+      { name: "Motion Graphics Video", price: "₹300/min" },
+      { name: "Graphic Design Package", price: "₹400" },
     ],
   },
   {
     category: "Development",
     items: [
-      { name: "Website Development", price: "$2,500+" },
-      { name: "Mobile App (iOS/Android)", price: "$8,000+" },
+      { name: "Website Development", price: "₹2,500+" },
+      { name: "Mobile App (iOS/Android)", price: "₹8,000+" },
       { name: "Custom Software", price: "Custom" },
-      { name: "API Integration", price: "$500+" },
+      { name: "API Integration", price: "₹500+" },
     ],
   },
   {
     category: "Marketing & Growth",
     items: [
-      { name: "SEO (Monthly)", price: "$800/mo" },
-      { name: "Social Media Management", price: "$600/mo" },
-      { name: "Google/Facebook Ads", price: "$500/mo + ad spend" },
-      { name: "Content Marketing", price: "$700/mo" },
+      { name: "SEO (Monthly)", price: "₹800/mo" },
+      { name: "Social Media Management", price: "₹600/mo" },
+      { name: "Google/Facebook Ads", price: "₹500/mo + ad spend" },
+      { name: "Content Marketing", price: "₹700/mo" },
     ],
   },
   {
     category: "Wedding & Event",
     items: [
-      { name: "Wedding Invitation Video", price: "$200" },
-      { name: "Save The Date Animation", price: "$150" },
-      { name: "Wedding Highlight Reel", price: "$500" },
-      { name: "Event Slideshow", price: "$250" },
+      { name: "Wedding Invitation Video", price: "₹200" },
+      { name: "Save The Date Animation", price: "₹150" },
+      { name: "Wedding Highlight Reel", price: "₹500" },
+      { name: "Event Slideshow", price: "₹250" },
     ],
   },
 ];

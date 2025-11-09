@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "./theme-toggle";
 import { cn } from "@/lib/utils";
+import { Calendar } from "lucide-react";
+import { getCalApi } from "@calcom/embed-react";
 
 const routes = [
   { href: "/", label: "Home" },
@@ -18,6 +20,17 @@ const routes = [
 export function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({"namespace":"navbar-cal"});
+      cal("ui", {
+        "styles": { "branding": { "brandColor": "#9333ea" } },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
+      });
+    })();
+  }, []);
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -68,6 +81,17 @@ export function Navbar() {
 
           {/* Right side */}
           <div className="flex items-center space-x-4">
+            {/* Book a Call Button - Desktop */}
+            <button
+              data-cal-namespace="navbar-cal"
+              data-cal-link="nishant-k/connect-for-calcuttacloud"
+              data-cal-config='{"layout":"month_view"}'
+              className="hidden md:inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-all hover:scale-105 hover:shadow-md"
+            >
+              <Calendar className="h-4 w-4" />
+              Book a Call
+            </button>
+
             <ThemeToggle />
 
             {/* Mobile menu button */}
@@ -135,6 +159,18 @@ export function Navbar() {
                     {route.label}
                   </Link>
                 ))}
+
+                {/* Book a Call Button - Mobile */}
+                <button
+                  data-cal-namespace="navbar-cal"
+                  data-cal-link="nishant-k/connect-for-calcuttacloud"
+                  data-cal-config='{"layout":"month_view"}'
+                  onClick={() => setIsOpen(false)}
+                  className="w-full flex items-center gap-2 justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-2.5 text-base font-medium text-white shadow-sm mt-2"
+                >
+                  <Calendar className="h-4 w-4" />
+                  Book a Call
+                </button>
               </div>
             </motion.div>
           )}
