@@ -11,6 +11,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Calcutta Cloud - All-in-One Creative, Technology & Marketing Ecosystem",
   description: "Heritage Meets Tech. Empowering creators, businesses, and brands with strategy, design, development, marketing, and automation — all under one seamless platform.",
+  icons: {
+    icon: "/cloud.jpg",
+  },
+  openGraph: {
+    title: "Calcutta Cloud - All-in-One Creative, Technology & Marketing Ecosystem",
+    description: "Heritage Meets Tech. Empowering creators, businesses, and brands with strategy, design, development, marketing, and automation — all under one seamless platform.",
+    images: ["/cloud.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Calcutta Cloud - All-in-One Creative, Technology & Marketing Ecosystem",
+    description: "Heritage Meets Tech. Empowering creators, businesses, and brands with strategy, design, development, marketing, and automation — all under one seamless platform.",
+    images: ["/cloud.jpg"],
+  },
 };
 
 export default function RootLayout({

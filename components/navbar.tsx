@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -43,11 +44,13 @@ export function Navbar() {
               whileTap={{ scale: 0.95 }}
               className="flex items-center space-x-2"
             >
-              <div className="relative h-8 w-8">
-                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600" />
-                <div className="absolute inset-0.5 rounded-lg bg-background" />
-                <div className="absolute inset-1 rounded-md bg-gradient-to-br from-blue-500 to-purple-600" />
-              </div>
+              <Image
+                src="/cloud.jpg"
+                alt="Calcutta Cloud Logo"
+                width={40}
+                height={40}
+                className="h-10 w-10 rounded-lg object-contain"
+              />
               <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Calcutta Cloud
               </span>
