@@ -366,7 +366,7 @@ export default function HomePage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5 dark:opacity-10"
             style={{
-              backgroundImage: "url('/cloud.jpg')",
+              backgroundImage: "url('/ImageTest.jpg')",
             }}
           />
         </div>
