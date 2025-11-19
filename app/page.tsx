@@ -61,14 +61,14 @@ const services = [
 
     ],
     pricing: [
-      { name: "Logo & Brand Identity", price: "₹500" },
-      { name: "UI/UX Design", price: "₹700/screen" },
+      { name: "Logo & Brand Identity", price: "₹800" },
+      { name: "UI/UX Design", price: "₹2000/screen" },
       { name: "Motion Graphics Video", price: "₹300/min" },
-      { name: "Graphic Design Package", price: "₹400" },
+      { name: "Graphic Design Package", price: "₹800" },
       { name: "Posters,Flyer,Social Media Posts", price: "₹500" },
       {name: "Invitation,Events ,Business Card", price: "₹500" },
       {name: "Menu,Resume or Portfolio", price: "₹400/page" },
-      { name: "Advertisement Design", price: "₹600" }
+      { name: "Advertisement Design", price: "₹800" }
     ]
   },
   {
@@ -193,7 +193,7 @@ const services = [
     pricing: [
       { name: "Wedding Invitation Video", price: "₹800" },
       { name: "Wedding Invitation", price: "₹750" },
-      { name: "Wedding Highlight Reel", price: "₹1500" },
+      { name: "Wedding Highlight Reel", price: "₹800" },
       { name: "Event Slideshow", price: "₹1000" }
     ]
   },
