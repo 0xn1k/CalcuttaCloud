@@ -35,10 +35,10 @@ const services = [
       "Performance optimization"
     ],
     pricing: [
-      { name: "Website Development", price: "₹2,500+" },
-      { name: "Mobile App (iOS/Android)", price: "₹8,000+" },
+      { name: "Website Development", price: "₹7,500+" },
+      { name: "Mobile App (iOS/Android)", price: "₹10,000+" },
       { name: "Custom Software", price: "Custom" },
-      { name: "API Integration", price: "₹500+" }
+      { name: "API Integration", price: "₹700+" }
     ]
   },
   {
@@ -53,13 +53,22 @@ const services = [
       "Motion graphics & video animation",
       "Graphic design packages",
       "Brand guidelines & style guides",
-      "Print & digital assets"
+      "Print & digital assets",
+      "Posters,Flyer,Social media post or Crausal",
+      "Invitation,Events ,Business Card",
+      "Menu,Resume or Portfolio",
+      "Advertisement design"
+
     ],
     pricing: [
       { name: "Logo & Brand Identity", price: "₹500" },
-      { name: "UI/UX Design", price: "₹150/screen" },
+      { name: "UI/UX Design", price: "₹700/screen" },
       { name: "Motion Graphics Video", price: "₹300/min" },
-      { name: "Graphic Design Package", price: "₹400" }
+      { name: "Graphic Design Package", price: "₹400" },
+      { name: "Posters,Flyer,Social Media Posts", price: "₹500" },
+      {name: "Invitation,Events ,Business Card", price: "₹500" },
+      {name: "Menu,Resume or Portfolio", price: "₹400/page" },
+      { name: "Advertisement Design", price: "₹600" }
     ]
   },
   {
@@ -175,17 +184,17 @@ const services = [
     detailedDescription: "Make your special moments unforgettable. From save-the-date videos to wedding highlight reels, we create beautiful memories that last forever.",
     features: [
       "Wedding invitation videos",
-      "Save the date animations",
+      "Wedding invitation designs",
       "Wedding highlight reels",
       "Event slideshow creation",
       "Social media teasers",
       "Photo & video editing"
     ],
     pricing: [
-      { name: "Wedding Invitation Video", price: "₹200" },
-      { name: "Save The Date Animation", price: "₹150" },
-      { name: "Wedding Highlight Reel", price: "₹500" },
-      { name: "Event Slideshow", price: "₹250" }
+      { name: "Wedding Invitation Video", price: "₹800" },
+      { name: "Wedding Invitation", price: "₹750" },
+      { name: "Wedding Highlight Reel", price: "₹1500" },
+      { name: "Event Slideshow", price: "₹1000" }
     ]
   },
   {
